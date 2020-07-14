@@ -8,15 +8,15 @@ class MovieCard extends React.Component {
     const {
       title, storyline, imagePath, id,
     } = movie;
-    return (
-      <div className="row" data-testid="movie-card">
-        <div className="col s12 m7">
-          <div className="card movie-card">
+    return (      
+      <div data-testid="movie-card">
+        <div className="col s3 m3">
+          <div className="card movie-card blue-grey darken-1">
             <div className="card-image">
               <img alt="Movie Cover" className="movie-card-image" src={imagePath} />
               <span className="card-title">{title}</span>
             </div>
-            <div className="card-content">
+            <div className="card-content white-text">
               <p>{storyline}</p>
             </div>
             <div className="card-action">
@@ -24,7 +24,7 @@ class MovieCard extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      </div>     
     );
   }
 }

@@ -1,5 +1,8 @@
 body {
-  background-color: whitesmoke;
+  background-color: rgb(42,52,57);
   box-sizing: border-box;
 }
 
+.movie-form {
+  padding: 10%;
+}
