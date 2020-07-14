@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/movie-cards">
       <main>
         <Switch>
           <Route exact path="/" component={MovieList} />
